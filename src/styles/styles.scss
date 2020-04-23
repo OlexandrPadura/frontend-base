@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.main-wrapper {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(248, 248, 248);
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'] {
+	background: rgb(231, 231, 231);
+	border: none;
+	border-radius: 2px;
+	width: 300px;
+	color: rgb(148, 147, 151);
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+button,
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+textarea {
+	outline: 0;
+}
+
+button {
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.control {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 5px;
+	padding-top: 8px;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control_indicator {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background: #e6e6e6;
+	border: 0px solid #000000;
+	border-radius: 5px;
+}
+.control-radio .control_indicator {
+	border-radius: 2%;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+	background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+	background: #80afff;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+	background: #80afff;
+}
+.control input:disabled ~ .control_indicator {
+	background: #e6e6e6;
+	opacity: 1;
+	pointer-events: none;
+}
+.control_indicator:after {
+	box-sizing: unset;
+	content: '';
+	position: absolute;
+	display: none;
+}
+.control input:checked ~ .control_indicator:after {
+	display: block;
+}
+.control-checkbox .control_indicator:after {
+	left: 10px;
+	top: 4px;
+	width: 5px;
+	height: 11px;
+	border: solid #ffffff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+	border-color: white;
+}
+
+.loading {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pointer {
+	cursor: pointer;
+}

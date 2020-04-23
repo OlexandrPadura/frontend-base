@@ -1,0 +1,12 @@
+.selectStyle {
+	border: none;
+	height: 20px;
+	padding: 15px 10px;
+	font-size: 18px;
+	width: -webkit-fill-available;
+	border: 1px solid #CCCCCC;
+}
+
+.inputStyle::placeholder {
+	color: rgba(55, 55, 55, 0.5);
+}

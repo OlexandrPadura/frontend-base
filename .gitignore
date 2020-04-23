@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+.idea/
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directories
+node_modules
+jspm_packages
+build
+dist
+public
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Because Mac
+.DS_Store
+
+# Project Files
+docs
+.eslintcache
+.stylelintcache
+
+# Build
+build
+
+# IDE's
+.idea
+.vscode
+
+# Merge backups
+*.orig

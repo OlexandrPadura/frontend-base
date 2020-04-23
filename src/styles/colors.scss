@@ -1,0 +1,51 @@
+$blue1: rgb(128, 175, 255);
+$blue2: rgb(86, 147, 238);
+$blue3: rgb(73, 116, 241);
+$blue4: rgb(0, 52, 203);
+$blue5: rgb(1, 40, 152);
+$blue6: rgb(0, 32, 129);
+$red: #de3163;
+$gray: rgb(74, 74, 74);
+$grayBorder: rgb(241, 241, 241);
+
+.blue1-color {
+	color: $blue1;
+}
+.blue2-color {
+	color: $blue2;
+}
+.blue3-color {
+	color: $blue3;
+}
+.blue4-color {
+	color: $blue4;
+}
+.blue5-color {
+	color: $blue5;
+}
+.blue6-color {
+	color: $blue6;
+}
+
+.blue1-backg {
+	background: $blue1;
+}
+.blue2-backg {
+	background: $blue2;
+}
+.blue3-backg {
+	background: $blue3;
+}
+.blue4-backg {
+	background: $blue4;
+}
+.blue5-backg {
+	background: $blue5;
+}
+.blue6-backg {
+	background: $blue6;
+}
+
+.red-color {
+	color: $red;
+}

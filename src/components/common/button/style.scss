@@ -1,0 +1,52 @@
+@import '../../../styles/colors.scss';
+
+.commonButton {
+	background: $secondColor;
+	border: none;
+	height: 55px;
+	color: white;
+	font-size: 28px;
+}
+
+.commonButton:disabled {
+	background: gray;
+}
+
+.smallBtn {
+	height: 35px;
+	padding: 0px 21px;
+	font-size: 16px;
+}
+
+.transparentBtn {
+	background: transparent;
+	color: $secondColor;
+	border: 2px solid $secondColor;
+}
+
+.commonButton:hover {
+	background: $secondColorHover;
+}
+
+.transparentBtn:hover {
+	background: transparent !important;
+	color: $secondColorHover;
+	border: 2px solid $secondColorHover;
+}
+
+.noBorderBtn:hover {
+	color: $secondColorHover;
+	border: none !important;
+}
+
+.commonButton:disabled:hover {
+	background: gray;
+}
+
+.btnIconStyle {
+	height: 15px;
+}
+
+.noBorderBtn {
+	border: none;
+}

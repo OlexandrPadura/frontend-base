@@ -1,0 +1,19 @@
+.inputStyle {
+	border: none;
+	height: 20px;
+	padding: 15px 10px;
+	font-size: 18px;
+    width: -webkit-fill-available;
+}
+
+.inputBorderBottom{
+	border-bottom: 1px solid #3A4750;
+}
+
+.inputFullBorder{
+	border: 1px solid #CCCCCC;
+}
+
+.inputStyle::placeholder {
+	color: rgba(55, 55, 55, 0.5);
+}
